@@ -1,59 +1,117 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nasza Historia</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    header {
-      height: 100vh;
-      background-image: url('images/fontanna.jpg');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: white;
-      text-shadow: 2px 2px 5px black;
-      text-align: center;
-    }
-    section {
-      padding: 60px 20px;
-      text-align: center;
-    }
-    .onas img, .end img {
-      max-width: 90%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-    }
-    footer {
-      padding: 20px;
-      text-align: center;
-      background-color: #f2f2f2;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Katarzyna & Łukasz</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #f8fdf8;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #dfeeea;
+            color: #2f4f4f;
+            text-align: center;
+            padding: 2em 1em;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        section {
+            padding: 2em;
+            max-width: 900px;
+            margin: auto;
+        }
+        img {
+            max-width: 100%%;
+            height: auto;
+            border-radius: 20px;
+            margin-top: 1em;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+        h2 {
+            color: #5c8a72;
+            border-bottom: 2px solid #a0c3a2;
+            padding-bottom: 0.3em;
+        }
+        .schedule p, .menu ul, .rsvp, .location a {
+            font-size: 1.1em;
+        }
+        .rsvp input, .rsvp textarea, .rsvp button {
+            display: block;
+            width: 100%%;
+            margin-top: 0.5em;
+            padding: 0.5em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-family: inherit;
+        }
+        footer {
+            text-align: center;
+            padding: 1em;
+            background-color: #dfeeea;
+            font-size: 0.9em;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <h1>Witamy na naszej stronie!</h1>
-  </header>
+<header>
+    <h1>Katarzyna & Łukasz</h1>
+    <p>Ślub – 31 stycznia 2026</p>
+</header>
 
-  <section class="onas">
-    <h2>O Nas</h2>
-    <p>Nasza wspólna historia zaczęła się od jednego spojrzenia... i trwa do dziś.</p>
-    <img src="images/serce.jpg" alt="O nas" />
-  </section>
+<section>
+    <h2>O nas</h2>
+    <p>Z radością zapraszamy Cię na nasz ślub! Chcemy, abyś był/a częścią tego wyjątkowego dnia pełnego miłości, śmiechu i wspomnień.</p>
+    <img src="photo.jpg" alt="Katarzyna i Łukasz">
+</section>
 
-  <footer class="end">
-    <h2>Do zobaczenia!</h2>
-    <img src="images/zachod.jpg" alt="Na pomoście" />
-  </footer>
+<section class="schedule">
+    <h2>Plan Dnia</h2>
+    <p><strong>13:00</strong> – Ceremonia Ślubna</p>
+    <p><strong>14:30</strong> – Przyjazd na salę</p>
+    <p><strong>15:00</strong> – Obiad</p>
+    <p><strong>16:30</strong> – Pierwszy Taniec</p>
+    <p><strong>18:00</strong> – I Gorące Danie</p>
+</section>
+
+<section class="location">
+    <h2>Lokalizacje</h2>
+    <p><strong>Kościół:</strong> Parafia Św. Stanisława BM, Pustynia 150a, 39-200 Dębica</p>
+    <p><strong>Sala:</strong> Dom Weselny Wiśniowy Raj, Zawierzbie 85, 39-204 Zawierzbie</p>
+    <a href="https://maps.google.com?q=Pustynia+150a,+Dębica" target="_blank">📍 Zobacz na mapie (kościół)</a><br>
+    <a href="https://maps.google.com?q=Zawierzbie+85,+Zawierzbie" target="_blank">📍 Zobacz na mapie (sala)</a>
+</section>
+
+<section class="menu">
+    <h2>Menu & Atrakcje</h2>
+    <ul>
+        <li>Słodki stół – przygotowany przez "Słodki Kąsek"</li>
+        <li>Wiejski stół z regionalnymi przysmakami</li>
+        <li>Barek alkoholowy z różnorodnymi trunkami</li>
+    </ul>
+</section>
+
+<section class="rsvp">
+    <h2>Potwierdzenie Obecności</h2>
+    <form action="https://formsubmit.co/twoj-email@example.com" method="POST">
+        <input type="text" name="Imię i nazwisko" placeholder="Imię i nazwisko" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <textarea name="Wiadomość" placeholder="Dodatkowe informacje (np. dieta, dojazd)"></textarea>
+        <button type="submit">Potwierdź</button>
+    </form>
+</section>
+
+<footer>
+    Dziękujemy, że jesteś z nami – Katarzyna i Łukasz 💚
+</footer>
 
 </body>
 </html>
